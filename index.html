@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewspaperNOW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo" href="#" onclick="reload()" >
+            NewspaperN<span style="color: #F6B17A;font-size:26px"><i class="fa-solid fa-clock"></i></span>W
+        </div>
+        <div class="flex nav-items navbar-nav">
+            <li><a class="hover-link nav-item" id="india" onclick="onNavItemClick('india')">India</a></li>
+            <li><a class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</a></li>
+            <li><a class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</a></li>
+            <li><a class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</a></li>
+            <li><a class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</a></li>
+        </div>
+        <div class="search-bar flex">
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span>
+            </div>
+            <form action="#">
+                <input id="search-text" type="text" class="news-input form-control" placeholder=" e.g. Science" required>
+                <button type="submit" id="search-button" class="fas fa-search search-button btn btn-primary"></button>
+            </form>
+        </div>
+      </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+    <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+            <li><a class="hover-link nav-item" id="india" onclick="onNavItemClick('india')">India</a></li>
+            <li><a class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</a></li>
+            <li><a class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</a></li>
+            <li><a class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</a></li>
+            <li><a class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+              <li><a href="#">Health</a></li>
+              <li><a href="#">IT Sector</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Cricket</a></li>
+              <li><a href="#">Hockey</a></li>
+              <li><a href="#">Festivals</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="links">
+              <li><a href="#">Customer Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Media Kit</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+             <a href="www.facebook.com"> <i class="fa-brands fa-facebook-f"></i></a>
+             <a href="https://twitter.com/arpit_bhatia_"><i class="fa-brands fa-twitter"></i></a>
+             <a href="https://www.linkedin.com/in/bhatiaarpit/"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="https://github.com/bhatiaarpit"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <p style="color: white; text-align: center;">Created by &copy; Arpit Bhatia </p>
+      </section>
+    <script src="script.js"></script>
+</body>
+</html> 
