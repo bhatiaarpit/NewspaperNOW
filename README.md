@@ -60,7 +60,3 @@ To run this project locally, follow these steps:
 ## Contact
 
 If you have any questions, feel free to contact me at arpitbhatia903@gmail.com.
-
----
-
-Replace `[your email address]` with your actual email address or any other contact method you prefer. Additionally, update the demo link to the actual URL where the project is hosted if available.
