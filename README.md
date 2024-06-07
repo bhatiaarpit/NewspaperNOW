@@ -9,7 +9,7 @@ NewspaperNOW is a web application that provides the latest news updates by utili
 
 You can try out the NewspaperNOW by visiting the following link:
 
-[NewspaperNOW](https://bhatiaarpit.github.io/NewspaperNOW/) *(replace with your actual link)*
+[NewspaperNOW](https://bhatiaarpit.github.io/NewspaperNOW/) 
 
 ## Features
 
